@@ -1,4 +1,4 @@
-# AI Prompt Log (Task 5)
+# AI Prompt Log
 
 ## Prompt 1 — Task 1 (API Client Debugging)
 **Tool:** Perplexity AI
@@ -8,7 +8,7 @@
 ## Prompt 2 — Task 2 (Builder Pattern)
 **Tool:** Perplexity AI
 **Prompt:** "Extract 8 hardcoded test emails from OrderTests.cs into fluent OrderBuilder method for DRY compliance"
-**Outcome:** Generated `WithScenarioEmail("scenario")` mapping "sql-injection" → "sql-injection@example.com". **Enhanced** with 8 real scenarios (unicode/café emojis, performance edge cases). **Rejected** constants class - fluent API provides better discoverability and readability.
+**Outcome:** Generated `WithScenarioEmail("scenario")` mapping "sql-injection" → "sql-injection@example.com". Enhanced with 8 real scenarios (unicode/café emojis, performance edge cases). **Rejected** constants class - fluent API provides better discoverability and readability.
 
 ## Prompt 3 — Task 3 (Polling Utility) ← **FIXED**
 **Tool:** Perplexity AI
