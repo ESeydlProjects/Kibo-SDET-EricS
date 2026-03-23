@@ -1,0 +1,11 @@
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\bin\Debug\net10.0\Kibo.TestingFramework.deps.json
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\bin\Debug\net10.0\Kibo.TestingFramework.dll
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\bin\Debug\net10.0\Kibo.TestingFramework.pdb
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.AssemblyInfoInputs.cache
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.AssemblyInfo.cs
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.csproj.CoreCompileInputs.cache
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.dll
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\refint\Kibo.TestingFramework.dll
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.pdb
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\ref\Kibo.TestingFramework.dll
