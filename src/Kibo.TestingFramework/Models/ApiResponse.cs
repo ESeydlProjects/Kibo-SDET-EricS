@@ -2,7 +2,6 @@ using System.Net;
 
 namespace Kibo.TestingFramework.Models;
 
-
 public record ApiResponse<T>(
     HttpResponseMessage RawResponse,
     T? Data,

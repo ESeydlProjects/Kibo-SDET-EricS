@@ -45,7 +45,7 @@ public class ObservabilityHandler : DelegatingHandler
         // 5. CAPTURE RESPONSE
         var responseLog = await FormatResponseAsync(response, cancellationToken);
 
-        // 6. ATTACH DIAGNOSTICS (HttpResponseMessage.Content.Headers - thread-safe)
+        // 6. ATTACH DIAGNOSTICS (HttpResponseMessage.Content.Headers)
         response.Content.Headers.Add("X-Kibo-Correlation-Id", correlationId);
         response.Content.Headers.Add("X-Kibo-Elapsed-Ms", elapsedMs.ToString());
         response.Content.Headers.Add("X-Kibo-Request-Log", requestLog);

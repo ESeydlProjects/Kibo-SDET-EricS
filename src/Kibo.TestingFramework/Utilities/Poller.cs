@@ -7,7 +7,7 @@ public static class Poller
 {
     /// <summary>
     /// Polls an async operation until condition is met or timeout occurs.
-    /// Replaces Thread.Sleep() - returns as soon as condition is true.
+    /// Replaces Thread.Sleep() -- returns as soon as condition is true.
     /// </summary>
     public static async Task<T> WaitUntilAsync<T>(
         Func<Task<T>> operation,

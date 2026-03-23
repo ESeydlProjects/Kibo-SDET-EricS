@@ -9,3 +9,4 @@ C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0
 C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\refint\Kibo.TestingFramework.dll
 C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.pdb
 C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\ref\Kibo.TestingFramework.dll
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.TestingFramework\obj\Debug\net10.0\Kibo.TestingFramework.sourcelink.json

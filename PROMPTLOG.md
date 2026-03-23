@@ -6,7 +6,7 @@
 **Outcome:** Suggested three fixes. **Kept** raw `StringContent` to preserve exact payload structure from legacy tests (backward compatibility), **changed** `Guid? Id` → `Guid Id` (fixed model binding), **rejected** `PostAsJsonAsync` due to serialization differences breaking MockApi expectations. After 3 iterations, `CreateOrder_ReturnsSuccess` passed.
 
 ## Prompt 2 — Task 2 (Builder Pattern)
-**Tool:** Perplexity AI  
+**Tool:** Perplexity AI
 **Prompt:** "Extract 8 hardcoded test emails from OrderTests.cs into fluent OrderBuilder method for DRY compliance"
 **Outcome:** Generated `WithScenarioEmail("scenario")` mapping "sql-injection" → "sql-injection@example.com". **Enhanced** with 8 real scenarios (unicode/café emojis, performance edge cases). **Rejected** constants class - fluent API provides better discoverability and readability.
 

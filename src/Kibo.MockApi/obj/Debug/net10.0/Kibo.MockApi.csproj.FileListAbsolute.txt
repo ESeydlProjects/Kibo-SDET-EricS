@@ -26,3 +26,4 @@ C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.MockApi\obj\Debug\net10.0\refint\K
 C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.MockApi\obj\Debug\net10.0\Kibo.MockApi.pdb
 C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.MockApi\obj\Debug\net10.0\Kibo.MockApi.genruntimeconfig.cache
 C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.MockApi\obj\Debug\net10.0\ref\Kibo.MockApi.dll
+C:\Kibo\Kibo-SDET-Challenge-20260224\src\Kibo.MockApi\obj\Debug\net10.0\Kibo.MockApi.sourcelink.json

@@ -1,4 +1,4 @@
-using Kibo.TestingFramework;
+using Kibo.TestingFramework.Clients;
 
 namespace Kibo.LegacyTests;
 
@@ -8,7 +8,7 @@ public class KiboTestFixture : IDisposable
     public KiboApiClient Client { get; private set; }
     public KiboApiClient TenantlessClient { get; private set; }
 
-    //  Environment variable toggle for logging
+    // Environment variable toggle for logging
     private static bool EnableLogging => Environment.GetEnvironmentVariable("KIBO_TEST_LOGGING") == "true";
 
     public KiboTestFixture()

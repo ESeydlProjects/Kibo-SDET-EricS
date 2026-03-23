@@ -13,7 +13,7 @@ public class OrderBuilder
     private readonly Random _random = new();
 
     /// <summary>
-    /// Entry point for fluent order building with sensible defaults
+    /// Entry point for fluent order building with sensible defaults applied
     /// </summary>
     public static OrderBuilder Default => new();
 

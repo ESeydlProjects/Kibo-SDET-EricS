@@ -6,6 +6,6 @@
 
 ## 🚀 Quick Start
 ```bash
-dotnet build                    # Clean compile
+dotnet build                           # Clean compile
 dotnet run --project src/Kibo.MockApi  # Start API (http://localhost:5000)
 dotnet test tests/Kibo.LegacyTests     # All tests pass

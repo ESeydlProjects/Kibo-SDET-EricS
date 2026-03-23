@@ -4,7 +4,7 @@ using Kibo.TestingFramework.Handlers;
 using Kibo.TestingFramework.Models;
 using System.Net.Http.Json;
 
-namespace Kibo.TestingFramework;
+namespace Kibo.TestingFramework.Clients;
 
 public class KiboApiClient : IDisposable
 {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kibo.TestingFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+feaef88a6a76ca7696beeccb936d07ed98cb422b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f80031b1920d19c8b4e4edc1f99e1bc5fb8995d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kibo.TestingFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kibo.TestingFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

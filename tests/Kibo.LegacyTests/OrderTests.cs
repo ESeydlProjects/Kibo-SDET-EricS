@@ -1,4 +1,4 @@
-using Kibo.TestingFramework;
+using Kibo.TestingFramework.Clients;
 using System.Net;
 using Kibo.TestingFramework.Builders;
 using Kibo.TestingFramework.Utilities;
@@ -18,7 +18,7 @@ namespace Kibo.LegacyTests;
 /// 
 /// NEW CAPABILITIES:
 /// • Toggleable diagnostics + performance assertions
-/// • Edge cases expose MockApi security/business gaps
+/// • Edge cases expose MockApi security/business validation gaps
 /// </summary>
 
 public class OrderTests : IClassFixture<KiboTestFixture>

@@ -98,3 +98,4 @@ C:\Kibo\Kibo-SDET-Challenge-20260224\tests\Kibo.LegacyTests\obj\Debug\net10.0\re
 C:\Kibo\Kibo-SDET-Challenge-20260224\tests\Kibo.LegacyTests\obj\Debug\net10.0\Kibo.LegacyTests.pdb
 C:\Kibo\Kibo-SDET-Challenge-20260224\tests\Kibo.LegacyTests\obj\Debug\net10.0\Kibo.LegacyTests.genruntimeconfig.cache
 C:\Kibo\Kibo-SDET-Challenge-20260224\tests\Kibo.LegacyTests\obj\Debug\net10.0\ref\Kibo.LegacyTests.dll
+C:\Kibo\Kibo-SDET-Challenge-20260224\tests\Kibo.LegacyTests\obj\Debug\net10.0\Kibo.LegacyTests.sourcelink.json
