@@ -1,6 +1,6 @@
 using System.Text;
 using System.Text.Json;
-using Kibo.TestingFramework.Handlers;
+using Kibo.TestingFramework.Observability;
 using Kibo.TestingFramework.Models;
 using System.Net.Http.Json;
 

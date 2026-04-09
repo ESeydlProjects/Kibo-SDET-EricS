@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kibo.MockApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2243f8f87d85c6acc9387ef097f4bfc352883900")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9211ead273ed0e894110d2608714b3a51245af2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kibo.MockApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kibo.MockApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

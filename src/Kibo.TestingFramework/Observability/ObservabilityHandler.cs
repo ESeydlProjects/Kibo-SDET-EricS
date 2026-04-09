@@ -1,21 +1,16 @@
 using System.Diagnostics;
 using System.Text;
 
-namespace Kibo.TestingFramework.Handlers;
+namespace Kibo.TestingFramework.Observability;
 
 /// <summary>
 /// HttpClient DelegatingHandler for observability requirements.
 /// Captures timing, correlation ID, request/response logs for CI/CD diagnostics.
 /// Logging toggleable via constructor parameter.
 /// </summary>
-public class ObservabilityHandler : DelegatingHandler
+public class ObservabilityHandler(bool enableLogging = false) : DelegatingHandler
 {
-    private readonly bool _enableLogging;
-
-    public ObservabilityHandler(bool enableLogging = false)
-    {
-        _enableLogging = enableLogging;
-    }
+    private readonly bool _enableLogging = enableLogging;
 
     public new HttpMessageHandler InnerHandler 
     { 
