@@ -136,15 +136,12 @@ public class OrderTests : IClassFixture<KiboTestFixture>
     {
         var order = OrderBuilder.Default
             .WithScenarioEmail("negative-price")
-            .WithLineItems(new[] 
-            { 
-                new LineItem 
-                { 
+            .WithLineItems([new LineItem 
+        { 
                     ProductCode = "TEST-001",
                     Quantity = 1,
                     UnitPrice = -19.99m  
-                }
-            })
+            }])
             .Build();
 
         var response = await _fixture.Client.CreateOrderRawAsync(order);

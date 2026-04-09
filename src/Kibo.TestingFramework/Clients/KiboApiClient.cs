@@ -10,28 +10,31 @@ public class KiboApiClient : IDisposable
 {
     private readonly HttpClient _httpClient;
 
+    private static readonly JsonSerializerOptions s_camelCaseOptions = new()
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+    };
+
     public KiboApiClient(string baseUrl, string tenantId, bool enableLogging = false)
     {
         var httpHandler = new HttpClientHandler();
         HttpMessageHandler handler;
-       
+
         if (enableLogging)
         {
-            var obsHandler = new ObservabilityHandler(enableLogging: true);
-            obsHandler.InnerHandler = httpHandler;
-            handler = obsHandler;
+            handler = new ObservabilityHandler(enableLogging: true) { InnerHandler = httpHandler };
         }
         else
         {
             handler = httpHandler;
         }
-       
+
         _httpClient = new HttpClient(handler)
         {
             BaseAddress = new Uri(baseUrl),
             Timeout = TimeSpan.FromSeconds(30)
         };
-       
+
         _httpClient.DefaultRequestHeaders.Add("x-kibo-tenant", tenantId);
     }
 
@@ -40,12 +43,12 @@ public class KiboApiClient : IDisposable
     /// </summary>
     public async Task<ApiResponse<Order>> CreateOrderAsync(Order order)
     {
-        var json = JsonSerializer.Serialize(order, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+        var json = JsonSerializer.Serialize(order, s_camelCaseOptions);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
-          
+
         var response = await _httpClient.PostAsync("/v1/orders", content);
         var orderData = await response.Content.ReadFromJsonAsync<Order>();
-          
+
         return new ApiResponse<Order>(
             response,
             orderData,
@@ -61,7 +64,7 @@ public class KiboApiClient : IDisposable
     /// </summary>
     public async Task<HttpResponseMessage> CreateOrderRawAsync(Order order)
     {
-        var json = JsonSerializer.Serialize(order, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+        var json = JsonSerializer.Serialize(order, s_camelCaseOptions);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
         return await _httpClient.PostAsync("/v1/orders", content);
     }
@@ -71,23 +74,20 @@ public class KiboApiClient : IDisposable
     /// </summary>
     public KiboApiClient WithLogging()
     {
-        return new KiboApiClient(
-            _httpClient.BaseAddress!.ToString(),
-            _httpClient.DefaultRequestHeaders.GetValues("x-kibo-tenant")!.First(),
-            enableLogging: true
-        );
+        return this;
     }
 
     public void Dispose()
     {
         _httpClient?.Dispose();
+        GC.SuppressFinalize(this);
     }
 
     public async Task<ApiResponse<Order>> GetOrderAsync(string orderId)
     {
         var response = await _httpClient.GetAsync($"/v1/orders/{orderId}");
         var orderData = await response.Content.ReadFromJsonAsync<Order>();
-       
+
         return new ApiResponse<Order>(
             response, orderData,
             response.GetElapsedMs(),

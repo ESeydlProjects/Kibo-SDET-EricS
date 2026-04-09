@@ -30,5 +30,6 @@ public class KiboTestFixture : IDisposable
     {
         Client?.Dispose();
         TenantlessClient?.Dispose();
+        GC.SuppressFinalize(this);
     }
 }

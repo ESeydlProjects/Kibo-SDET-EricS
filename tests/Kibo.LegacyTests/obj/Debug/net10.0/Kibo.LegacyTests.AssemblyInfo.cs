@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kibo.LegacyTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f80031b1920d19c8b4e4edc1f99e1bc5fb8995d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2243f8f87d85c6acc9387ef097f4bfc352883900")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kibo.LegacyTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kibo.LegacyTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

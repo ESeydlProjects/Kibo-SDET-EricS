@@ -7,7 +7,7 @@ public class OrderBuilder
     private readonly Order _order = new()
     {
         CustomerEmail = "test@kibo.com",
-        LineItems = new List<LineItem>()
+        LineItems = []
     };
 
     private readonly Random _random = new();
